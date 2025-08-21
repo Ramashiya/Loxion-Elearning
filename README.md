@@ -57,23 +57,3 @@ Pull requests are welcome. For major changes, open an issue first to discuss the
 
 ## License
 MIT © Matome Michael Ramashiya
-
----
-### Security Review Summary (generated)
-⚠️ Potential secrets found in:
-- `Loxion/Admin/Generate_token.php` → match: **token** (…rade']) ? $_POST['grade'] : NULL;      $token = bin2hex(random_bytes(3));      if ($r…)
-- `Loxion/Admin/Generate_token.php` → match: **token** (… $query = "INSERT INTO pre_registration_tokens (Token, Role, Grade, Classroom, Genera…)
-- `Loxion/Admin/Generate_token.php` → match: **Token** (…= "INSERT INTO pre_registration_tokens (Token, Role, Grade, Classroom, GeneratedOn, E…)
-- `Loxion/Admin/Generate_token.php` → match: **token** (…mysqli_stmt_bind_param($stmt, "sssss", $token, $role, $grade, $selectedClassroom, $ex…)
-- `Loxion/Admin/Generate_token.php` → match: **Token** (…mt)) {             echo "<script>alert('Token generated successfully: $token');</scri…)
-- `Loxion/Admin/Generate_token.php` → match: **token** (…t>alert('Token generated successfully: $token');</script>";         } else {         …)
-- `Loxion/Admin/pre_registration.php` → match: **Token** (…ef="pre_style.css">     <title>Generate Token</title>      <script>         function …)
-- `Loxion/Admin/pre_registration.php` → match: **Token** (…         <button type="submit">Generate Token</button>     </form>      <?php   inclu…)
-- `Loxion/Admin/pre_registration.php` → match: **Token** (…t(); }     $query = "         SELECT pt.TokenID, pt.Token, pt.Role, pt.Grade, pt.Clas…)
-- `Loxion/Admin/pre_registration.php` → match: **Token** (…query = "         SELECT pt.TokenID, pt.Token, pt.Role, pt.Grade, pt.Classroom, pt.Us…)
-- `Loxion/Admin/pre_registration.php` → match: **token** (….Lastname         FROM pre_registration_tokens pt         LEFT JOIN users u ON pt.Use…)
-- `Loxion/Admin/pre_registration.php` → match: **Token** (…  echo "<table>";         echo "<tr><th>TokenID</th><th>Token</th><th>Role</th><th>Gr…)
-- `Loxion/Admin/pre_registration.php` → match: **Token** (…;         echo "<tr><th>TokenID</th><th>Token</th><th>Role</th><th>Grade</th><th>Clas…)
-- `Loxion/Admin/pre_registration.php` → match: **token** (…    $action = "<form action='reactivate_token.php' method='post' style='display:inlin…)
-- `Loxion/Admin/pre_registration.php` → match: **token** (…             <input type='hidden' name='token_id' value='" . $row['TokenID'] . "'>   …)
-- (+ 71 more matches not shown)
