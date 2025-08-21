@@ -49,8 +49,6 @@ This repository preserves the original hackathon structure. Additional meta file
 - Put DB credentials in environment variables or an untracked config.
 - See `.gitignore` which already excludes `.env` and keys.
 
-## Screenshots
-> Add screenshots of key pages here: `docs/screenshots/` (create folder).
 
 ## Contributing
 Pull requests are welcome. For major changes, open an issue first to discuss the proposal.
